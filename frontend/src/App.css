@@ -1,0 +1,206 @@
+/* General Reset */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.login-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw;
+  padding: 10px;
+  box-sizing: border-box; /* Include padding in width calculations */
+}
+
+.login-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%; /* Full width to adapt */
+  max-width: 1000px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.branding {
+  flex: 1 1;
+  margin-right: 20px;
+  text-align: left;
+}
+
+.logo {
+  font-size: 50px;
+  color: #1877f2;
+  font-weight: bold;
+  margin: 0;
+}
+
+.tagline {
+  font-size: 20px;
+  color: #606770;
+  margin: 10px 0;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box; /* Include padding in width calculations */
+}
+
+form {
+  width: 100%;
+  box-sizing: border-box; /* Include padding in width calculations */
+  padding: 0;
+}
+
+.input-field {
+  width: 100%;
+  box-sizing: border-box; /* Ensure padding and border are included in width */
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #dddfe2;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: white;
+  color: black;
+}
+
+.login-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #1877f2;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.login-button:hover {
+  background-color: #165ed9;
+}
+
+.forgot-password {
+  display: block;
+  text-align: center;
+  color: #1877f2;
+  font-size: 14px;
+  text-decoration: none;
+  margin: 10px 0;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+hr {
+  margin: 20px 0;
+  border: none;
+  height: 1px;
+  background-color: #dddfe2;
+}
+
+.signup-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #42b72a;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.signup-button:hover {
+  background-color: #36a420;
+}
+
+.footer {
+  margin-top: 20px;
+  text-align: center;
+  color: #606770;
+  font-size: 14px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column; /* Stack elements */
+    padding: 15px;
+    text-align: center; /* Center align content */
+  }
+
+  .branding {
+    margin-right: 0;
+    margin-bottom: 30px;
+    text-align: center; /* Center branding text */
+  }
+
+  .logo {
+    font-size: 40px;
+  }
+
+  .tagline {
+    font-size: 16px;
+    margin: 5px 0; /* Reduce spacing below tagline */
+  }
+
+  .login-form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-container {
+    padding: 10px;
+    border-radius: 5px; /* Softer corners for smaller screens */
+  }
+
+  .branding {
+    margin-bottom: 10px; /* Reduce gap */
+  }
+
+  .logo {
+    font-size: 35px;
+  }
+
+  .tagline {
+    font-size: 14px;
+    margin: 5px 0; /* Tighten space */
+  }
+
+  .login-form {
+    margin-top: 0; /* Remove excess gap */
+  }
+
+  .input-field {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .login-button,
+  .signup-button {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .footer {
+    font-size: 12px;
+  }
+}
